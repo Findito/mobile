@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct mobileApp: App {
+    init() {
+            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).backgroundColor = .white
+            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .black
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
